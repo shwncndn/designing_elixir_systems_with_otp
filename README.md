@@ -1,5 +1,6 @@
 
 ![designing_elixir_systems_with_otp](https://github.com/user-attachments/assets/74c41f3e-9adc-46b7-86e9-0dad640f5772)
+<img src="[your_image_url.jpg](https://github.com/user-attachments/assets/74c41f3e-9adc-46b7-86e9-0dad640f5772)" alt="drawing" width="400"/>
 
 ### Chapter 1: Build Your Project in Layers
 
@@ -13,15 +14,15 @@ Presents the well-known (at least in Elixir circles) **D**o **F**un **T**hings w
 **Workers** - Pools and dependencies
 
 #### Data
-```
+
 "When the data structure is right, the functions holding the algorithms that do things can seem to write themselves. Get them wrong and it doesn't really matter how good a programmer you are; your functions will feel clumsy and awkward."
-```
+
 The datatypes we construct will later on guide the structure we of the components of our applications and the govern the way our functions interact with each other.
 
 #### Functional Core
-```
+
 "Building our core allows us to isolate the inherent complexity of our domain from the complexity of the machinery we need to manage processes, handle side effects, and the like."
-```
+
 
 Inner layer (functional core) should:
 - not care about any boundary-related operations;
@@ -30,16 +31,16 @@ Inner layer (functional core) should:
 - and is made up of functions.
 
 #### Testing
-```
+
 "One of the benefits of structuring your project into core and boundary layers is that our coding organization will simplify testing. With a basic API layer that does most of the business logic, you'll be able to write tests to thoroughly exercise your business logic should you choose to do so."
-```
+
 
 Keeping the functional core isolated from external conditions drastically reduces testing complexity.
 
 #### Lifecycle
-```
+
 "Supervisors are about startying and stopping cleanly, whether you have a single server or a bunch of them. Once you can start cleanly and detect failure,  you can get failover almost for free"
-```
+
 
 OTP is the built-in mechanism for supervision in Erlang/Elixir:
 - Supervision is not about handling failure;
@@ -49,10 +50,10 @@ OTP is the built-in mechanism for supervision in Erlang/Elixir:
 - meaning that Elixir's primary mechanism for handling failure is supervision-based lifecycle management.
 
 #### Workers
-```
+
 The workers are the different processes in your component. Generally, you'll start with a flat design having a single worker and decide where you need to be more sophisticated.
 
 As your design evolves you will possibly see places that you need to add workers, for cleaning up lifecycles or for concurrently dividing work. Connection pools are workers; tasks and agents can be as well.
-```
+
 - Various constructs that provide concurrency
 - Adjacent to the *boundary* and *lifecycle* layers but is its own *worker* lifecycle
