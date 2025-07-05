@@ -1,6 +1,6 @@
 # Designing Elixir Systems with OTP
 
-### Chapter 1: Build Your Project in Layers
+## Chapter 1: Build Your Project in Layers
 
 A high-level overview highlighting layer-focused design principles, the roots of robust and scalable software. In Elixir, that will frequently involve the OTP standard library.
 
@@ -11,16 +11,15 @@ Presents the well-known (at least in Elixir circles) **D**o **F**un **T**hings w
 - **Lifecycle** - Supervision
 - **Workers** - Pools and dependencies
 
-#### Data
+### Data
 
 "When the data structure is right, the functions holding the algorithms that do things can seem to write themselves. Get them wrong and it doesn't really matter how good a programmer you are; your functions will feel clumsy and awkward."
 
 The datatypes we construct will later on guide the structure we of the components of our applications and the govern the way our functions interact with each other.
 
-#### Functional Core
+### Functional Core
 
 "Building our core allows us to isolate the inherent complexity of our domain from the complexity of the machinery we need to manage processes, handle side effects, and the like."
-
 
 Inner layer (functional core) should:
 - not care about any boundary-related operations;
@@ -28,14 +27,14 @@ Inner layer (functional core) should:
 - as well as minimal side effects;
 - and is made up of functions.
 
-#### Testing
+### Testing
 
 "One of the benefits of structuring your project into core and boundary layers is that our coding organization will simplify testing. With a basic API layer that does most of the business logic, you'll be able to write tests to thoroughly exercise your business logic should you choose to do so."
 
 
 Keeping the functional core isolated from external conditions drastically reduces testing complexity.
 
-#### Lifecycle
+### Lifecycle
 
 "Supervisors are about startying and stopping cleanly, whether you have a single server or a bunch of them. Once you can start cleanly and detect failure,  you can get failover almost for free"
 
@@ -47,7 +46,7 @@ OTP is the built-in mechanism for supervision in Erlang/Elixir:
 - and if you get the lifecycle right you will also have a higher likelihood of good recovery as a result;
 - meaning that Elixir's primary mechanism for handling failure is supervision-based lifecycle management.
 
-#### Workers
+### Workers
 
 The workers are the different processes in your component. Generally, you'll start with a flat design having a single worker and decide where you need to be more sophisticated.
 
