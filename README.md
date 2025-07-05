@@ -1,6 +1,6 @@
 
-![designing_elixir_systems_with_otp](https://github.com/user-attachments/assets/74c41f3e-9adc-46b7-86e9-0dad640f5772)
-<img src="[your_image_url.jpg](https://github.com/user-attachments/assets/74c41f3e-9adc-46b7-86e9-0dad640f5772)" alt="drawing" width="400"/>
+
+<img src="![designing_elixir_systems_with_otp](https://github.com/user-attachments/assets/74aa1274-c7eb-48e9-84ba-bd369b757935)" />
 
 ### Chapter 1: Build Your Project in Layers
 
