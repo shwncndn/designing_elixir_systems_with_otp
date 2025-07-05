@@ -1,17 +1,15 @@
-
-
-<img src="![designing_elixir_systems_with_otp](https://github.com/user-attachments/assets/74aa1274-c7eb-48e9-84ba-bd369b757935)" />
+# Designing Elixir Systems with OTP
 
 ### Chapter 1: Build Your Project in Layers
 
 A high-level overview highlighting layer-focused design principles, the roots of robust and scalable software. In Elixir, that will frequently involve the OTP standard library.
 
 Presents the well-known (at least in Elixir circles) **D**o **F**un **T**hings with **L**oud **W**orkerbees:
-**Data** - Domain modeling
-**Functional Core** - Business logic
-**Testing** - Behavioral contracts and validation
-**Lifecycle** - Supervision
-**Workers** - Pools and dependencies
+- **Data** - Domain modeling
+- **Functional Core** - Business logic
+- **Testing** - Behavioral contracts and validation
+- **Lifecycle** - Supervision
+- **Workers** - Pools and dependencies
 
 #### Data
 
