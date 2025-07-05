@@ -1,4 +1,6 @@
-# designing_elixir_systems_with_otp
+
+![designing_elixir_systems_with_otp](https://github.com/user-attachments/assets/74c41f3e-9adc-46b7-86e9-0dad640f5772)
+
 ### Chapter 1: Build Your Project in Layers
 
 A high-level overview highlighting layer-focused design principles, the roots of robust and scalable software. In Elixir, that will frequently involve the OTP standard library.
